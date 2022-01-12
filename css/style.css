@@ -190,8 +190,9 @@ hr{
 .course-frame img{
     width: 224px;
     height: 104px;
-    display:block;
-    margin:auto;
+    display: block;
+    margin: auto;
+    padding-bottom:5px;
 }
 .course-info h3{
     color: #000;
