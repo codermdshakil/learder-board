@@ -31,10 +31,10 @@ body{
     height: 52px;
 }
 .logo h3{
-    font-size: 24px;
-    margin-left: 16px;
     color: #fff;
+    font-size: 18px;
     font-weight: 500;
+    margin-left: 16px;
 }
 .navber{
     display: flex;
@@ -46,6 +46,7 @@ body{
 .navber li a{
     text-decoration: none;
     color: #fff;
+    font-size: 16px;
     margin: 0px 20px;
 }
 .menu_btn{
