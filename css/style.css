@@ -1,8 +1,8 @@
-
 /*=======================
 google fonts linked here 
 =========================*/
-@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500;700;900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -113,7 +113,10 @@ hr{
     font-weight: 500;
     margin-left: 16px;
 }
-
+#menu{
+    font-size: 25px;
+    color:#FFF;
+}
 /*===============================
  top blogs section starts here 
 ==================================*/
@@ -154,23 +157,97 @@ hr{
     grid-row-gap: 34px;
 }
 
+/*==========================
+ latest course starts here 
+=========================== */
+.container-course{
+    width: 870px;
+    border-radius: 5px;
+    background: #fff;
+    display: block;
+    margin: 30px auto 0px auto;
+    padding: 30px;
+}
 
+.title-course{
+    color:#562EEF;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 33px;
 
+}
 
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+.course{
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.212) 0px 1px 2px 0px, rgba(60, 64, 67, 0.075) 0px 1px 3px 1px;
+    border-radius: 5px;
+}
+.course-frame img{
+    width: 224px;
+    height: 104px;
+}
+.course-info h3{
+    color: #000;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+}
+.author-course{
+    color: #ED6B4F;
+    font-size: 14.69px;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+    line-height:17.22px;
+    margin-top: 7.17px;
+    margin-bottom:19.25px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.course-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.fas{
+    font-size: 12px;
+}
+.filled{
+    color: #FFC014;
+}
+.unfilled{
+    color: #A2A2A2;
+}
+.point p{
+    color: #A2A2A2;
+}
+.date{
+    background: #ff4a5f4b;
+    padding: 2px 5px;
+    border-radius: 25px;
+    margin-right: 12px;
+    
+}
+.date p{
+    color:#FF4A60;
+}
+/*==========================
+ footer section starts here 
+============================ */
+.copyright{
+    text-align: center;
+    font-size: 16px;
+    color:#FF4A60;
+    padding: 25px 0px;
+}
+.credit{
+    text-decoration: none;
+    color: #562EEF;
+    cursor: pointer;
+}
 
 
 /* medum devices  */
@@ -204,14 +281,21 @@ hr{
     .container{
         width: 100%;
     }
+    .container-course{
+        width: 100%;
+    }
     .players{
         grid-template-columns: repeat(2, 1fr);
-       
     }
     .blogs{
         grid-template-columns: 1fr;
     }
-   
+    .courses{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .course{
+        margin-bottom: 30px;
+    }
 }
 
 
@@ -223,7 +307,6 @@ hr{
         right: 6vh;
         display: flex;
         justify-content: center;
-
     }
     .logo img{
         width: 35px;
@@ -235,9 +318,11 @@ hr{
     .container{
         width: 100%;
     }
+    .container-course{
+        width: 100%;
+    }
     .players, .blogs{
         grid-template-columns: repeat(1, 1fr);
-       
     }
     .player{
         display: block;
@@ -250,7 +335,15 @@ hr{
       margin: auto;
       text-align: center;
       margin-bottom: 30px;
-
     }
-
+    .courses{
+        grid-template-columns:1fr;
+    }
+    .course{
+        width: 250px;
+        display: block;
+        margin:auto;
+        margin-bottom: 50px;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    }
 }

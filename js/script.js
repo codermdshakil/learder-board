@@ -1,4 +1,3 @@
-
 const navber = document.querySelector('.navber');
 
 document.querySelector('#menu').onclick = () =>{
