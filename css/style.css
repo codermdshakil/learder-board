@@ -1,5 +1,7 @@
 
-/* google fonts linked here  */
+/*=======================
+google fonts linked here 
+=========================*/
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@300;400;500;600&display=swap');
 *{
     margin: 0;
@@ -10,10 +12,15 @@ body{
     background:#E5E5E5;
     font-family: 'Poppins', sans-serif;
 }
-/* header style starts here  */
+/*=======================
+header style starts here 
+========================= */
 
 .header-section{
     padding: 10px;
+    top: 0;
+    position:fixed;
+    width: 100%;
     background-color:#562EEF;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
@@ -59,15 +66,23 @@ body{
     width: 51px;
     height: 51px;
 }
-/* header style ends here  */
+hr{
+    border:1px solid #D1D1D1;
+}
+/*======================
+ header style ends here 
+ ======================= */
 
-/* top player section stats here  */
+
+/*=============================
+ top player section stats here  
+ ===============================*/
 .container{
     width: 870px;
     border-radius:5px;
     background: #fff;
     display: block;
-    margin:20px auto 0px auto;
+    margin:100px auto 0px auto;
     padding: 30px;
 }
 .top-title{
@@ -76,10 +91,12 @@ body{
     font-weight: 500;
     margin-bottom: 33px;
 }
+
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 30px;
+    padding-bottom: 35px;
 }
 .player{
     display: flex;
@@ -92,14 +109,49 @@ body{
 .player h3{
     color: #000;
     font-size: 18px;
+    font-weight: 500;
     margin-left: 16px;
 }
 
+/*===============================
+ top blogs section starts here 
+==================================*/
 
-
-
-
-
+.image-frame img{
+    width: 177px;
+    height: 117px;
+}
+.top-blogs{
+    padding:30px 0px;
+    color: #562EEF;
+    font-size: 24px;
+    font-weight: 500;
+}
+.blog{
+    display: flex;
+}
+.image-info{
+    margin-left: 16px;
+}
+.image-info h3{
+    font-size: 20px;
+    font-weight: 500;
+    line-height:34px;
+}
+.image-info p{
+    color:#9F9F9F;
+}
+.image-info p a{
+    text-decoration: none;
+    color: #562EEF;
+    font-size: 16px;
+    line-height: 24px;
+}
+.blogs{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 34px;
+}
 
 
 
@@ -155,6 +207,10 @@ body{
         grid-template-columns: repeat(2, 1fr);
        
     }
+    .blogs{
+        grid-template-columns: 1fr;
+    }
+   
 }
 
 
@@ -178,7 +234,7 @@ body{
     .container{
         width: 100%;
     }
-    .players{
+    .players, .blogs{
         grid-template-columns: repeat(1, 1fr);
        
     }
@@ -187,7 +243,13 @@ body{
         margin: auto;
         text-align: center;
         margin-bottom: 10px;
-        
+    }
+    .blog{
+      display:inline-block;
+      margin: auto;
+      text-align: center;
+      margin-bottom: 30px;
+
     }
 
 }
